@@ -1,4 +1,3 @@
-# 13-01-2023962403651
 #include <iostream>
 #include <string>
 #include <vector>
@@ -42,4 +41,8 @@ class Recatangle8
         obj2->m1();
     }
 };
-int main(int argc, char *…
+int main(int argc, char **argv){
+	std::vector<std::string> parameter(argv + 1, argv + argc);
+	Recatangle8::main(parameter); 
+	return 0;
+};
